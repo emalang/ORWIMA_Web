@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/*Navigacijska traka*/
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    width:100%;
+    height:80px;
+    background: pink;
+    padding: 0 10px;
+}
+
+.navbar h2{
+    color:white;
+    font-size:25px;
+    font-weight: 500;
+    padding: 0px 20px;
+
+}
+
+.navmenu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navmenu li{
+    display:inline-block;
+}
+
+.navmenu li a{
+    color:white;
+    margin-right:20px;
+    padding:0px 10px;
+    font-size: 18px;
+    font-weight:500;
+}
+
+
+/*Zaglavlje stranice*/
+.main-header{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    background:rgb(247, 243, 247);
+    width:100%;
+    height: auto;
+    
+}
+
+.main-header .header{
+  
+    flex: 1 1 20rem;
+    margin-left: 50px;
+}
+.main-header .header h5{
+    font-size:30px;
+    color:palevioletred;
+    font-weight:50;
+  
+}
+
+.main-header .header h2{
+    font-size:48px;
+    width:350px;
+    margin-top:10px;
+    margin-bottom:24px;
+
+}
+
+.main-header .header p{
+    margin-bottom:60px;
+    color:palevioletred;
+    font-size: 24px;
+}
+
+.main-header .books-slider {
+    flex: 1 1 40rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main-header .books-slider .swiper-slide {
+    width: 100%; 
+    margin: 10px;
+
+}
+
+.main-header .books-slider a img {
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.main-header .books-slider a:hover img {
+    transform: scale(.9);
+   
+}
+
+.main-header .books-slider .swiper-wrapper{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+section{
+    margin:auto;
+    background:rgb(247, 243, 247);
+    padding-bottom:50px; 
+}
+
+/*Sekcija Categories*/
+.categories{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    width: 100%; 
+    padding: 20px;
+}
+
+.categories p{
+    flex-basis:100%;
+    flex-wrap:wrap;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+
+.category-box{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 2rem); 
+    max-width: 500px;
+    height: 250px;
+    padding: 10px;
+    background-color: beige;
+    background-size: cover;
+    background-position: center;  
+    border: 2px solid palevioletred;
+}
+
+.category-box h3{
+    font-size: 22px;
+    background-color: palevioletred;
+    color:white;
+    padding:12px;
+    border-radius: 50px;
+    text-align:center;
+}
+
+.category-box h3 a{
+    color:white;
+}
+
+.category-box:nth-child(2) {
+   background-image:url(../images/Categories/Romance.jpg);
+   
+    
+}
+.category-box:nth-child(3) {
+    background-image:url(../images/Categories/Science_fiction.webp);
+     
+ }
+
+ .category-box:nth-child(4) {
+    background-image:url(../images/Categories/Thriller.jpg);
+     
+ }
+
+ .category-box:nth-child(5) {
+    background-image:url(../images/Categories/Psychology.webp);
+     
+ }
+
+ .category-box:nth-child(6) {
+    background-image:url(../images/Categories/Fantasy.webp);
+     
+ }
+
+ .category-box:nth-child(7) {
+    background-image:url(../images/Categories/Young_adult.jpg);
+     
+ }
+
+/*Sekcija Blog*/
+.blog{
+    padding-bottom: 20px;
+}
+
+
+.blog p{
+    flex-basis:100%;
+    flex-wrap:wrap;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.blog .blog-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blog .text-header {
+    flex: 1;
+    padding-right: 30px;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Align text to the left horizontally */
+    margin-left: 50px;
+    position:relative;
+}
+
+.blog .text-header h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 6rem;
+}
+
+.blog .text-header h6 {
+    font-size: 22px;
+    color: #555;
+    text-align: left;
+    color:black;
+}
+
+.blog .text-header .btn{
+    background:palevioletred;
+    border: 1px solid palevioletred;
+    font-size: 24px;
+    color:white;
+    font-weight:400;
+    padding:12px 30px ;
+    border-radius:50px;
+    transition:all .5s;
+    position: absolute;
+    margin-top:20px;
+}
+
+.blog .text-header .btn:hover{
+    color:blanchedalmond;
+    background: white;
+
+}
+
+.blog .blog-box .slideshow-container {
+    flex:1;
+    width: 100%;
+    margin-top: 20px;
+    padding-top:15px;
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+    margin-top:5px;
+    margin-right:15px;
+}
+
+
+.blog .mySlides {
+   display: none;
+}
+
+.blog .mySlides .img{
+    width:100%;
+}
+
+.blog .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.blog .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.blog .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.blog .text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color:pink;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.blog .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 15px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*Sekcija Bookshelf*/
+.bookshelf {
+    width: 100%;
+    padding-top:5px;
+    background-color: rgb(247, 243, 247);
+    text-align: center;
+  }
+  
+  .bookshelf p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+  
+.bookshelf .text {
+    font-size: 22px; 
+    font-style: italic;
+    color: black;
+    padding: 20px 30px; 
+    border: 2px solid pink; 
+    border-radius: 15px; 
+    background-color: #fff; 
+    margin: 0 auto; 
+    max-width: 800px; 
+  }
+  
+  .bookshelf .text h5 {
+    margin: 0; 
+    font-size: 25px; 
+    font-weight: 600; 
+    text-align: center;
+    color: #333; 
+  }
+  
+  .bookshelf .text a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:palevioletred;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .bookshelf .text a:hover {
+    background-color: #f17c8a; 
+}
+
+/*Footer*/
+.footer {
+    background-color: pink;
+    width:100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem; 
+}
+
+.footer p{
+    height: 30px;
+    width:auto;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    color:white;
+}
+
+.footer h5{
+    color: white;
+    margin:0;
+    font-size:15px;
+}
+
+.footer h5 a{
+    color: white;
+    margin:0;
+    font-size:15px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .category-box {
+        flex: 1 1 calc(33.33% - 2rem); 
+        max-width: 500px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .category-box {
+        flex: 1 1 calc(33.33% - 2rem); 
+        max-width: 350px; 
+    }
+
+    .blog .text-header,
+    .blog .slideshow-container {
+        flex: 1 1 100%; 
+        text-align: center; 
+        margin-left: 0;
+    }
+
+    .blog .text-header {
+        margin-top: 20px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .category-box {
+        flex: 1 1 calc(33.33% - 2rem); 
+        max-width: 350px; 
+    }
+}

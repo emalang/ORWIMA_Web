@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    width:100%;
+    height:80px;
+    background: pink;
+    padding: 0 10px;
+}
+
+.navbar h2{
+    color:white;
+    font-size:25px;
+    font-weight: 500;
+    padding: 0px 20px;
+
+}
+
+.navmenu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navmenu li{
+    display:inline-block;
+}
+
+.navmenu li a{
+    color:white;
+    margin-right:20px;
+    padding:0px 10px;
+    font-size: 18px;
+    font-weight:500;
+}
+
+.literature {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.literature h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.literature h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.literature ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.literature ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+.literature ul li a {
+    color:pink;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.literature ul li a:hover {
+    color:palevioletred;
+    text-decoration: underline;
+}
+
+
+.literature h3 {
+    border-bottom: 2px solid palevioletred;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}

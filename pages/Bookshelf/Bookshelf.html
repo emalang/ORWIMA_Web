@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Booktopia| Bookshelf</title>
+        <link rel="stylesheet" href="../../styles/Bookshelf/Bookshelf.css">
+        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>  
+    </head>
+
+  <body>
+        <header>
+              <nav class="navbar">
+                <div class="logo">
+                  <h2>Booktopia</h2>
+                </div>
+            
+                <div class="navmenu">
+                  <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../index.html#categories">Categories</a></li>
+                    <li><a href="../Blog/Blog.html">Blog</a></li>
+                    <li><a href="">Bookshelf</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+
+        <div class="header">
+            <h1>Discover Your Next Favorite Read with Booktopia Bookshelf!</h1>
+            <p>Welcome to Booktopia's Bookshelf, your personal collection of literary gems. Whether you're an avid reader or just
+               beginning your reading journey, our bookshelf allows you to easily store, organize, and manage your favorite books. 
+               Add titles, authors, and categories with just a few clicks, and keep track of your growing library. With a simple 
+               interface and handy "Remove" button, you can curate your perfect bookshelf. Never forget a book again—start building your
+               collection today!</p>
+        </div>
+
+        <section class="container">
+            <form id="book-form">
+                <div>
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title"/>
+                </div>
+                <div>
+                    <label for="author">Book Author</label>
+                    <input type="text" id="author"/>
+                </div>
+                <div>
+                    <label for="category">Category</label>
+                    <input type="text" id="category"/>
+                </div>
+                <button type="button" class="btn">Add Book</button>
+            </form>
+        </section>
+
+        <section class="table">
+            <section class="table-section">
+                <div>Title</div>
+                <div>Author</div>
+                <div>Category</div>
+                <div></div>
+            </section>
+            <section id="book-list"></section>
+        </section>
+
+        <footer>
+            <div class="footer">
+              <h5><a href="../Literature/Literature.html">Booktopia</a></h5>
+              <p>Boook Recommendation site. All rights reserved 2024.</p>
+            </div>
+        </footer>
+      
+        <script src="../../scripts/Bookshelf/bookshelf_script.js"></script>
+
+    </body>
+</html>
